@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WarsztatCRM</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="topbar">
+<div class="brand">
+  <a href="#/dashboard" class="brand-link" aria-label="Przejdź do pulpitu">
+  <img class="brand-logo" src="/static/logo.png" alt="WarsztatCRM" />
+</a>
+
+</div>
+
+
+    <nav id="nav" class="nav" aria-label="Nawigacja"></nav>
+
+    <div class="topbar-actions">
+      <button id="btnTheme" class="btn btn-ghost" type="button" aria-label="Przełącz tryb nocny">
+        <span class="icon" aria-hidden="true">◐</span>
+        <span class="btn-label">Tryb</span>
+      </button>
+
+      <button id="btnReset" class="btn btn-danger" type="button" title="Czyści dane z bieżącej sesji">
+        <span class="icon" aria-hidden="true">↺</span>
+        <span class="btn-label">Wyczyść sesję</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div id="app" class="app"></div>
+  </main>
+
+  <div id="modalRoot"></div>
+
+<footer class="footer">
+  <div class="muted">
+    Wersja demonstracyjna oprogramowania. O oprogramowanie zapytaj:
+    <a href="https://www.nightcode.pl" target="_blank" rel="noopener noreferrer">www.nightcode.pl</a>
+  </div>
+</footer>
+
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
